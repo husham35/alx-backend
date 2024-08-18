@@ -47,14 +47,14 @@ class Server:
         Returns the correct list of rows if correct indexes are given,
         else an empty list should be returned.
         """
-        assert type(page) == int and type(page_size) == int
+        assert type(page) is int and type(page_size) is int
         assert page > 0 and page_size > 0
         start, end = index_range(page, page_size)
         data = self.dataset()
         if start > len(data):
             return []
         return data[start:end]
-    
+
     def get_hyper(self, page: int = 1, page_size: int = 10) -> Dict:
         """
         Retrieves information about a page.
