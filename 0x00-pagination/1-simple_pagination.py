@@ -6,7 +6,7 @@ list for those particular pagination parameters.
 """
 import csv
 import math
-from typings import Tuple, List
+from typing import Tuple, List
 
 
 def index_range(page: int, page_size: int) -> Tuple[int, int]:
