@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Use user locale
+"""
+Use user locale
 """
 from flask import Flask
 from flask_babel import Babel
